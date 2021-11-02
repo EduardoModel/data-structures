@@ -31,7 +31,6 @@ class SingleLinkedList {
         if(!current){
             return null;
         }
-
         else if(current.value === value || (current.next && current.next.value === value)){
             const nodeValue = current.value;
             // Last element
@@ -87,15 +86,19 @@ class SingleLinkedList {
 }
 
 const linkedList = new SingleLinkedList();
+
 linkedList.add(6);
 linkedList.add(10);
 linkedList.add(1);
 linkedList.print();
+
 console.log(`REMOVE 1: ${linkedList.remove(1)}`);
 console.log(`REMOVE 9: ${linkedList.remove(9)}`);
 linkedList.print();
+
 linkedList.add(15);
 linkedList.add(52);
 linkedList.print();
+
 console.log(`REMOVE 6: ${linkedList.remove(6)}`);
 linkedList.print();
