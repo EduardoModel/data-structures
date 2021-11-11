@@ -37,7 +37,9 @@ class Stack {
     return currentTop.value;
   }
 
-  public empty() : void {}
+  public empty() : void {
+    this.top = null;
+  }
 }
 
 const stack = new Stack();
